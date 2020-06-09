@@ -21,6 +21,7 @@ public class BookingService {
         ResponseEntity<Booking[]> responseEntity = template.getForEntity(BASE_URL,Booking[].class);
         Booking[] bookings = responseEntity.getBody();
         List<Booking> bookings1 = Arrays.asList(bookings);
+        System.out.println(bookings1);
         return bookings1;
     }
 

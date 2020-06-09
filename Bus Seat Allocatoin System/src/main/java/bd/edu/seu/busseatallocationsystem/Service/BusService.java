@@ -23,6 +23,7 @@ public class BusService {
         ResponseEntity<Bus[]> responseEntity = template.getForEntity(BASE_URL,Bus[].class);
         Bus[] buses = responseEntity.getBody();
         List<Bus> buses1 = Arrays.asList(buses);
+        System.out.println(buses1);
         return buses1;
     }
 
