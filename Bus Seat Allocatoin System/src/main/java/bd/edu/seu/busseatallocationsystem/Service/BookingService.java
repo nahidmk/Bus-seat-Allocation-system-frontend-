@@ -14,8 +14,8 @@ public class BookingService {
 
     private RestTemplate template = new RestTemplate();
 
-    public static final String BASE_URL = "http://localhost:8081/v2/booking";
-
+//    public static final String BASE_URL = "http://localhost:8081/v2/booking";
+    public static final String BASE_URL = "https://bus-seat-allocation-system-bac.herokuapp.com/v2/booking";
     public List<Booking> findAll()
     {
         ResponseEntity<Booking[]> responseEntity = template.getForEntity(BASE_URL,Booking[].class);

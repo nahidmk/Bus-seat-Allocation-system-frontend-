@@ -15,7 +15,8 @@ public class BusService {
 
     private RestTemplate template = new RestTemplate();
 
-    public static final String BASE_URL = "http://localhost:8081/v2/bus";
+//    public static final String BASE_URL = "http://localhost:8081/v2/bus";
+    public static final String BASE_URL = "https://bus-seat-allocation-system-bac.herokuapp.com/v2/bus";
 
     public List<Bus> findAll()
     {
